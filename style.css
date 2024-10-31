@@ -1,0 +1,114 @@
+/* Reset basic styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #1a2a6c, #b21f1f, #fdbb2d);
+    color: #fff;
+}
+
+.container {
+    text-align: center;
+    width: 90%;
+    max-width: 600px;
+    background-color: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+}
+
+h1 {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #ffd700;
+}
+
+p {
+    font-size: 1rem;
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+canvas {
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    margin: 20px 0; /* Add space above and below the canvas */
+    background-color: rgba(255, 255, 255, 0.1); /* Add slight background color to canvas */
+}
+
+.buttons {
+    margin-top: 15px;
+    display: flex;
+    justify-content: space-between; /* Space between buttons */
+    align-items: center; /* Center the buttons vertically */
+}
+
+button {
+    padding: 12px 15px; /* Adjusted padding for better appearance */
+    font-size: 1rem;
+    font-weight: bold;
+    color: #fff;
+    background: linear-gradient(135deg, #ff416c, #ff4b2b);
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: transform 0.3s, box-shadow 0.3s;
+    box-shadow: 0 4px 10px rgba(255, 75, 43, 0.4);
+    flex: 1; /* Make buttons take equal space */
+    margin: 0 5px; /* Space between buttons */
+}
+
+button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(255, 75, 43, 0.6);
+}
+
+button:active {
+    transform: translateY(2px);
+}
+
+/* Additional styles for the color picker */
+select {
+    padding: 12px 15px; /* Match the button padding */
+    font-size: 1rem;
+    font-weight: bold;
+    color: #fff;
+    background: linear-gradient(135deg, #ff416c, #ff4b2b); /* Match button background */
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.3s;
+    margin-top: 10px;
+    flex: 1;
+    box-shadow: 0 4px 10px rgba(255, 75, 43, 0.4); /* Add shadow for effect */
+}
+
+select:hover {
+    background: linear-gradient(135deg, #ff4b2b, #ff416c);
+}
+
+select:focus {
+    outline: none;
+    box-shadow: 0 0 5px rgba(255, 255, 255, 0.6);
+}
+
+.interface-container {
+    margin-top: 15px;
+}
+
+.hint {
+    font-size: 0.9rem;
+    color: #ffd700;
+    margin-top: 5px;
+    text-align: center;
+}

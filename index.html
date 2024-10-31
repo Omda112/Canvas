@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Drawing Pad</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>AI Drawing Pad</h1>
+        <p>ارسم أي شكل تريده بالماوس، واضغط على "مسح اللوحة" لمسح الرسومات</p>
+        <canvas id="myCanvas" width="500" height="300"></canvas>
+
+        <div class="buttons">
+            <button id="toggleMode">Switch to Point Placement</button>
+            <button id="clearCanvas">Clear Canvas</button>
+        </div>
+
+        <div class="interface-container">
+            <label for="colorPicker">اختر اللون:</label>
+            <select id="colorPicker">
+                <option value="rgba(0, 128, 255, 0.5)">أزرق</option>
+                <option value="rgba(255, 0, 0, 0.5)">أحمر</option>
+                <option value="rgba(0, 255, 0, 0.5)">أخضر</option>
+                <option value="rgba(255, 255, 0, 0.5)">أصفر</option>
+                <option value="rgba(255, 165, 0, 0.5)">برتقالي</option>
+            </select>
+            <p class="hint">اختر لونًا من القائمة لتلوين الشكل الذي ترسمه.</p>
+        </div>
+    </div>
+    <script src="./main.js"></script>
+</body>
+</html>
